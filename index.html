@@ -7,12 +7,22 @@
     <title>Music Player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
     <div class="main">
-        <h1 class="player_name">
-            Ankit Music Player
+       <div class="player_name">
+        <h1>
+            Hello, Beauty
         </h1>
+        <h2 class="I">I</h2>
+        <h2 class="play">PLAY</h2>
+        <h2 class="your">YOUR</h2>
+        <h2 class="fav">FAV</h2>
+        
+       </div>
+
+       
         <div class="music_container">
             <h2 id="title">Butterfly</h1>
             <h3 id="artist">Jass Manak</h3>
@@ -31,11 +41,13 @@
     </div>
     <script>
         const music = document.querySelector("audio");
+        const img = document.querySelector("img")
         const play = document.getElementById("play");
-
+        
         play.addEventListener("click", () =>{
             music.play();
-            play.classList.replace("fa-play","fa-pause")
+            play.classList.replace("fa-play","fa-pause");
+            img.classList.add("anime");
         });
     </script>
 </body>
