@@ -15,9 +15,9 @@ html{
     width: 100vw;
     height: 100vh;
     background-color: #f6f6f6;
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    margin-top: auto;
+    display: grid;
+    place-items: center;
+  
     
 }
 
@@ -26,26 +26,10 @@ html{
     letter-spacing: 0.2rem;
     word-spacing: 0.5rem;
     color: #171717;
-    margin: 5rem 0 0.5rem 0;
-    font-size: 2rem;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 1.5rem;
     font-weight: 500;
     text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
-}
-
-.player_name h2{
-    margin-top: 5rem;
-}
-.player_name .I{
-    margin-left: 1rem;
-}
-.player_name .play{
-    margin-left: 2rem;
-}
-.player_name .your{
-    margin-left: 4rem;
-}
-.player_name .fav{
-    margin-left: 7.5rem;
 }
 
 .music_container{
@@ -57,7 +41,7 @@ html{
     box-shadow: 0rem 1.2rem 3rem 0.5rem rgba(0,0,0,0.2); 
     padding: 3rem;
     text-align: center;
-    margin-top: 5rem;
+    
 }
 
 .music_container #title{
